@@ -10,5 +10,3 @@
 
 > result :: Int
 > result = sum . takeWhile (< 1000) $ multiplesOfAny [3, 5]
-
-> main = putStrLn $ show result
