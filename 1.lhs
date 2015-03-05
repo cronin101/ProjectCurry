@@ -6,7 +6,7 @@
 * Find the sum of all the multiples of 3 or 5 below 1000.
 
 > multiplesOfAny :: [Int] -> [Int]
-> multiplesOfAny divs = filter (\x -> any ((0 ==) . (x `mod`)) $ divs) [1..]
+> multiplesOfAny divs = filter (\x -> any ((0 ==) . (x `rem`)) $ divs) [1..]
 
 > result :: Int
 > result = sum . takeWhile (< 1000) $ multiplesOfAny [3, 5]
