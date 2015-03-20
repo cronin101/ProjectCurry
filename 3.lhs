@@ -44,3 +44,6 @@ Generating the full sequence of potential prime factors is unnecessary.
 
 > result :: Int
 > result = largestPrimeFactorOf' 600851475143
+
+> main :: IO ()
+> main = print result

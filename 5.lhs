@@ -19,3 +19,6 @@ Alternatively, smallestMultiple([1..n]) === lcm(smallestMultiple([1..n-1]), n):
 
 > result :: Int
 > result = smallestMultiple1To' 20
+
+> main :: IO ()
+> main = print result

@@ -11,3 +11,6 @@
 
 > result :: Int
 > result = maximum [p | x <- [999, 998 .. 100], y <- [999, 998 .. x], let p = x * y, isPalindromic p]
+
+> main :: IO ()
+> main = print result
